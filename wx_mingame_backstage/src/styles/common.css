@@ -1,0 +1,55 @@
+body,html{
+    height: 100%;
+    overflow: hidden;
+}
+.section,.content,.ivu-layout{
+    height: 100%;
+}
+.moaleLable{
+    width: 70px;
+    display: inline-block;
+}
+.fileUpLoad{
+    width: 90px;
+    height: 25px;
+    position: relative;
+    vertical-align: middle;
+    background: none;
+    border: 1px solid #cac6c6;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    float: right;
+    transition: .2s;
+    margin: 24px 7px 0 0;
+}
+.fileUpLoad:before{
+    content: "上传图片";
+    position: absolute;
+    z-index: 1;
+    width: 90px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    color: #cac6c6;
+    transition: .2s;
+}
+.fileUpLoad input[type=file]{
+    position: absolute;
+    z-index: 2;
+    width: 90px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.fileUpLoad:hover{
+    border-color: #2d8cf0;
+}
+.fileUpLoad:hover:before{
+    color: #2d8cf0;
+}
+.mform .ivu-input{
+    height: 40px !important;
+}
