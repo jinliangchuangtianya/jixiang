@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	    </script>
+	    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+	     <script>
+	    	(function(){
+	    		var html = document.documentElement
+		    	var viewportWidth = html.getBoundingClientRect().width;
+		    	html.style.fontSize = viewportWidth / 15 + 'px';
+		    	console.log(viewportWidth)
+	    	})()
+	    </script>
+	    <script>
+	    	window.onload = function(){
+	    		//禁止ios10以上缩放
+				document.addEventListener('gesturestart', function (e) {
+		            e.preventDefault();
+		        });
+		        document.addEventListener('dblclick', function (e) {
+		            e.preventDefault();
+		        });
+		        document.addEventListener('touchstart', function (event) {
+		            if (event.touches.length > 1) {
+		                event.preventDefault();
+		            }
+		           
+		        });
+		        var lastTouchEnd = 0;
+		        document.addEventListener('touchend', function (event) {
+		            var now = (new Date()).getTime();
+		            if (now - lastTouchEnd <= 300) {
+		                event.preventDefault();
+		            }
+		            lastTouchEnd = now;
+		        }, false);
+		        //禁止ios10以上缩放End
+	    	}
+	    </script>
+	</head>
+	<body>
+		<p class="tip">
+			由于IOS系统权限调整,打开应用需要进入【设置>>通用>>描述文件】(IOS9上叫“描述文件”，IOS10上叫“设备管理”),信任同名的描述文件即可.
+		</p>
+		<p class="tu">详细图文教程</p>
+		<div class="jc_list">
+			<div class="speedbox">
+				<span class="speed">1</span>
+				<span class="text">如果打开下载的游戏或者应用『游戏应用』,出现如下提示,记住红色部分的描述文件名</span>
+				
+				<img src="img/t1.png"/>
+			</div>
+			<div class="speedbox">
+				<span class="speed">2</span>
+				<span class="text">然后再设备中点击【设置>>通用>>描述文件】(IOS9上叫“描述文件”，IOS10上叫“设备管理”),找到同名的描述文件.</span>
+				
+				<img src="img/t2.png"/>
+			</div>
+			<div class="speedbox">
+				<span class="speed">3</span>
+				<span class="text">点击文件，<span style="color: red;">选择【信任】</span>然后就能正常打开APP了.</span>
+				
+				<img src="img/t3.png"/>
+			</div>
+		</div>
+	</body>
+</html>

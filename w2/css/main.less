@@ -1,0 +1,225 @@
+@r:72rem;
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+     
+}
+body *{
+    -webkit-user-select: none;
+    font-family: helvetica;
+} 
+a,img,button,input,textarea,{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-tap-highlight-color: transparent
+    }
+
+button,input[type="button"], input[type="submit"], input[type="reset"] {
+
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 0;
+
+}
+textarea {  -webkit-appeaance: none;}
+
+.wrap{
+    padding-bottom: 300/@r;
+    min-height: 100%;
+     background: url(../img/title.png) no-repeat center 130/@r, url(../img/bg.jpg) no-repeat left top;
+     background-size: 770/@r 450/@r, cover;
+}
+.border_bottom{
+    border-bottom: 1px solid #ececec;
+}
+.wrap{
+    text-align: center;
+}
+.title{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    font-size: 75/@r;
+    line-height: 150/@r;
+    color: #000;
+}
+.icon_logo{
+    width: 300/@r;
+    height: 300/@r;
+    margin: 650/@r auto 50/@r;
+    border-radius: 62/@r;
+}
+.down-load-btn{
+    display: block;
+    margin:  0 auto;
+    background: url(../img/down_load.png) no-repeat center;
+    width: 763/@r;
+    height: 170/@r;
+    background-size: 100%;
+}
+.down_message{
+    font-size: 43/@r;
+    color: #060001;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 115/@r;
+}
+.down_tips{
+    display: block;
+    width: 374/@r;
+    height: 100/@r;
+    margin: 0 auto;
+}
+.down_tips>img{
+    width: 100%;
+    display: block;
+}
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
+    font-size: 18px;
+    padding: 6px 20px;
+}
+.tips{
+    text-align: center;
+    margin: 0 auto;
+    color: #333;
+    font-size: 45/@r;
+    padding: 40/@r 0;
+}
+.tips p{
+     margin: 0;
+}
+footer{
+    color: white;
+    background: rgba(255, 0, 0, .6);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 140/@r;
+    font-size: 40/@r;
+    text-indent: .8rem;
+    a{
+        color: white;
+    }
+}
+.mui-icon-arrowthinright{
+    font-weight: bold;
+    position: relative;
+    top: 5/@r;
+}
+
+.tip{
+    background: #fde9de;
+    font-size: 40/@r;
+    padding: 15px;
+    color: #ff8b3a;
+}
+.jc_list{
+   
+    padding: 0 50/@r;
+  
+    
+}
+.tu{
+     padding: 10px 15px;
+     color: #000;
+     font-size: 45/@r;
+     font-weight: bold;
+   
+}
+.speed{
+    width: 70/@r;
+    height: 70/@r;
+    background: blue;
+    border-radius: 50%;
+    color: white;
+    float: left;
+    text-align: center;
+    line-height: 70/@r;
+    position: relative;
+    top: 5/@r;
+}
+.text{
+    float: left;
+    width: 900/@r;
+    margin-left: 10/@r;
+    line-height: 80/@r;
+}
+.speedbox img{
+    width: 100%;
+}
+.layer>img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 462/@r;
+    height: 255/@r;
+}
+#wechar_tip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+}
+.wechar_tip_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=80);
+    -moz-opacity: .8;
+    opacity: .8;
+    background: #000;
+}
+.wechar_tip_content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11111;
+}
+.wechar_tip_arrow, .wechar_tip_text, .wechar_tip_text_android {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.wechar_tip_arrow {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background: url('http://mobile.weile.com/static/images/wechat/tip_arrow.png') no-repeat;
+    width: 46px;
+    height: 53px;
+    background-size: 100%;
+}
+
+.wechar_tip_text, .wechar_tip_text_android {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.wechar_tip_text {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -125px;
+    background: url('http://mobile.weile.com/static/images/wechat/tip_text.png') no-repeat;
+    width: 250px;
+    height: 134px;
+    background-size: 100%;
+}
+#qrcode{
+    margin: 0 auto;
+}

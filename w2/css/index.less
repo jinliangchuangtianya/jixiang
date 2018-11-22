@@ -1,0 +1,118 @@
+@r:72rem;
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    background: url(../img/bg.jpg) no-repeat left top;
+    background-size:100% 100%;
+}
+body *{
+    -webkit-user-select: none;
+    font-family: helvetica;
+} 
+a,img,button,input,textarea,{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-tap-highlight-color: transparent
+    }
+
+button,input[type="button"], input[type="submit"], input[type="reset"] {
+
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 0;
+
+}
+textarea {  -webkit-appeaance: none;}
+
+[data-userInfo]{
+    display: block;
+    font-weight: bold;
+    width: 760/@r;
+    height: 795/@r;
+    margin: 0 auto;
+    padding-top: 210/@r;
+    text-align: center;
+    [data-user-img]{
+        display: block;
+        margin: 0 auto;
+        width: 300/@r;
+        height: 300/@r;
+        background: red;
+        border-radius: 50%;
+        box-shadow: 0 0 0 9/@r #fff, 0 0 0 31/@r #40c9ae;
+    }
+    [data-user-name]{
+        display: block;
+        font-size: 85/@r;
+        color: #fffc00;
+        margin-top: 65/@r;
+    }
+    p{
+         font-size: 85/@r;
+         color: white;
+         line-height: 150/@r;
+         margin: 34/@r 0 0 0;
+    }
+}
+[data-btn]{
+    position: absolute;
+    left: 0;
+    bottom: 175/@r;
+    right: 0;
+    height: 135/@r;
+    text-align: center;
+    button{
+        width: 495/@r;
+        height: 100%;
+        background: #f64b20;
+        font-size: 57/@r;
+        color: white;
+        font-weight: bold;
+    }
+}
+.border_bottom{
+    border-bottom: 1px solid #ececec;
+}
+.wrap{
+    text-align: center;
+}
+.title{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    font-size: 55/@r;
+    line-height: 130/@r;
+    color: #000;
+}
+.icon_logo{
+    width: 245/@r;
+    height: 245/@r;
+    display: block;
+    margin: 20/@r auto;
+}
+.anzhuang{
+    padding: 15/@r 0;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+    span{
+        font-size: 12/@r;
+        background: #e4fcef;
+        display: block;
+        line-height: 60/@r;
+        width: 385/@r;
+        margin: 25/@r auto;
+        color: #3eb07c;
+        border: 1px solid ##caf5e1;
+        border-radius: 5px;
+    }
+}
+.tips{
+    text-align: center;
+    margin: 0 auto;
+}
